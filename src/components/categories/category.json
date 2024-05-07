@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_categories_categories",
+  "info": {
+    "displayName": "category",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cat.cat"
+    }
+  }
+}

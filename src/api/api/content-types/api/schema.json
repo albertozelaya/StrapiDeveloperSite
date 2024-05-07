@@ -4,41 +4,28 @@
   "info": {
     "singularName": "api",
     "pluralName": "apis",
-    "displayName": "Api"
+    "displayName": "Api",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.hero"
+    },
+    "content": {
+      "type": "richtext"
+    },
     "title": {
       "type": "string",
       "required": true
     },
-    "logo": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false
-    },
-    "desc": {
-      "type": "text"
-    },
-    "buttonColor": {
-      "type": "string",
-      "required": true
-    },
-    "coverImg": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false
-    },
-    "heroDesc": {
-      "type": "text",
-      "required": false
+    "slug": {
+      "type": "string"
     }
   }
 }
