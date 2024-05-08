@@ -14,7 +14,7 @@
       "type": "text",
       "required": true
     },
-    "btnColor": {
+    "bgColor": {
       "type": "string",
       "required": true
     },

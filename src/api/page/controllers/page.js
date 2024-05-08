@@ -21,9 +21,24 @@ module.exports = {
       populate: {
         components: {
           on: {
-            "apis.api-card": {
+            "apis.card-repeatable": {
               populate: {
-                logo: MediaFilter,
+                //pa llenar todo
+                cards: {
+                  populate: {
+                    logo:MediaFilter,
+                    api: {
+                      populate: {
+                        hero: {
+                          populate: {
+                            bgImage: MediaFilter,
+                          },
+                        },
+                      },
+                    },
+                    categories: { populate: "*" },
+                  },
+                },
               },
             },
 

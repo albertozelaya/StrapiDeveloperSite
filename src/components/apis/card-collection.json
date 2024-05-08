@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_apis_card_collections",
+  "info": {
+    "displayName": "cardCollection",
+    "icon": "arrowUp"
+  },
+  "options": {},
+  "attributes": {
+    "cards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::card.card"
+    }
+  }
+}

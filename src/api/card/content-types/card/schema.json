@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cards",
+  "info": {
+    "singularName": "card",
+    "pluralName": "cards",
+    "displayName": "card"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "descCard": {
+      "type": "text",
+      "required": true
+    },
+    "btnColor": {
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "api": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::api.api"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::cat.cat",
+      "mappedBy": "card"
+    }
+  }
+}

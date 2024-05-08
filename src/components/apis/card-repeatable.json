@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_apis_card_repeatables",
+  "info": {
+    "displayName": "cardRepeatable",
+    "icon": "chartBubble"
+  },
+  "options": {},
+  "attributes": {
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "apis.api-card"
+    }
+  }
+}

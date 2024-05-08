@@ -23,7 +23,9 @@
       "type": "dynamiczone",
       "components": [
         "apis.api-card",
-        "components.hero"
+        "components.hero",
+        "apis.card-repeatable",
+        "apis.card-collection"
       ]
     }
   }
