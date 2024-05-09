@@ -804,6 +804,7 @@ export interface ApiApiApi extends Schema.CollectionType {
     content: Attribute.RichText;
     title: Attribute.String & Attribute.Required;
     slug: Attribute.String;
+    slideImg: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

@@ -26,14 +26,16 @@ module.exports = {
                 //pa llenar todo
                 cards: {
                   populate: {
-                    logo:MediaFilter,
+                    logo: MediaFilter,
                     api: {
                       populate: {
                         hero: {
                           populate: {
                             bgImage: MediaFilter,
+                            heroImg: MediaFilter,
                           },
                         },
+                        slideImg:MediaFilter,
                       },
                     },
                     categories: { populate: "*" },
