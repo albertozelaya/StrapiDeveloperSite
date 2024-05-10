@@ -98,6 +98,17 @@ export interface SolutionsApiSolution extends Schema.Component {
   };
 }
 
+export interface SolutionsSolutionCardRepeatable extends Schema.Component {
+  collectionName: 'components_solutions_solution_card_repeatables';
+  info: {
+    displayName: 'solutionCardRepeatable';
+    icon: 'chartBubble';
+  };
+  attributes: {
+    cardSolution: Attribute.Component<'solutions.api-solution', true>;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
@@ -107,6 +118,7 @@ declare module '@strapi/types' {
       'categories.category': CategoriesCategory;
       'components.hero': ComponentsHero;
       'solutions.api-solution': SolutionsApiSolution;
+      'solutions.solution-card-repeatable': SolutionsSolutionCardRepeatable;
     }
   }
 }

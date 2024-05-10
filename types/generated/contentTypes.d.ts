@@ -888,7 +888,8 @@ export interface ApiPagePage extends Schema.CollectionType {
         'apis.api-card',
         'components.hero',
         'apis.card-repeatable',
-        'apis.card-collection'
+        'apis.card-collection',
+        'solutions.solution-card-repeatable'
       ]
     >;
     createdAt: Attribute.DateTime;

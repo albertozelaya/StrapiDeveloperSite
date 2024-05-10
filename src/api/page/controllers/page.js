@@ -35,7 +35,29 @@ module.exports = {
                             heroImg: MediaFilter,
                           },
                         },
-                        slideImg:MediaFilter,
+                        slideImg: MediaFilter,
+                      },
+                    },
+                    categories: { populate: "*" },
+                  },
+                },
+              },
+            },
+            "solutions.solution-card-repeatable": {
+              populate: {
+                cardSolution: {
+                  populate: {
+                    logo: MediaFilter,
+                    cardImg: MediaFilter,
+                    api: {
+                      populate: {
+                        hero: {
+                          populate: {
+                            bgImage: MediaFilter,
+                            heroImg: MediaFilter,
+                          },
+                        },
+                        slideImg: MediaFilter,
                       },
                     },
                     categories: { populate: "*" },
