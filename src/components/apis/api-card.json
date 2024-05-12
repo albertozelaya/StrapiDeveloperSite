@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_apis_api_cards",
+  "info": {
+    "displayName": "ApiCard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "descCard": {
+      "type": "text",
+      "required": true
+    },
+    "bgColor": {
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "api": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::api.api"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::cat.cat"
+    }
+  }
+}

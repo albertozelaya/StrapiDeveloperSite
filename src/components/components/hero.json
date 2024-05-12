@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_components_heroes",
+  "info": {
+    "displayName": "hero",
+    "icon": "archive"
+  },
+  "options": {},
+  "attributes": {
+    "bgImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "bgColor": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "title"
+    },
+    "content": {
+      "type": "text"
+    },
+    "heroImg": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

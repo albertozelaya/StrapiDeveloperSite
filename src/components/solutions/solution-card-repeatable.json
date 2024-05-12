@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_solutions_solution_card_repeatables",
+  "info": {
+    "displayName": "solutionCardRepeatable",
+    "icon": "chartBubble"
+  },
+  "options": {},
+  "attributes": {
+    "cardSolution": {
+      "type": "component",
+      "repeatable": true,
+      "component": "solutions.api-solution"
+    }
+  }
+}

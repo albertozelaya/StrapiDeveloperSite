@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_landing_landing_repeatables",
+  "info": {
+    "displayName": "landingRepeatable",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "landingCard": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.landing-card"
+    }
+  }
+}

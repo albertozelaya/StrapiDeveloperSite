@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_about_us_hero_promotion_forms",
+  "info": {
+    "displayName": "heroPromotionForm",
+    "icon": "command"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "desc": {
+      "type": "text",
+      "required": true
+    },
+    "bgColor": {
+      "type": "string"
+    },
+    "bgImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "btnColor": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

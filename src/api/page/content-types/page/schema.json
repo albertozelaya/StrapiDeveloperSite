@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "string"
+    },
+    "components": {
+      "type": "dynamiczone",
+      "components": [
+        "apis.api-card",
+        "components.hero",
+        "apis.card-repeatable",
+        "apis.card-collection",
+        "solutions.solution-card-repeatable",
+        "landing.landing-repeatable",
+        "about-us.acordeon-repeat",
+        "about-us.hero-promotion-form"
+      ]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_about_us_acordeon_repeats",
+  "info": {
+    "displayName": "acordeonRepeat"
+  },
+  "options": {},
+  "attributes": {
+    "acordeon": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.acordeon"
+    }
+  }
+}
