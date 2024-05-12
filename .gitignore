@@ -111,5 +111,4 @@ dist
 build
 .strapi-updater.json
 data
-*
-.enc
+*.enc
