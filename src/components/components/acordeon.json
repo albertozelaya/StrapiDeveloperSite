@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_components_acordeons",
+  "info": {
+    "displayName": "acordeon",
+    "icon": "layer"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "desc": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

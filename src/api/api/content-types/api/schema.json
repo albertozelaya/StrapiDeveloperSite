@@ -28,12 +28,18 @@
       "type": "string"
     },
     "slideImg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "videos"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "cardGriadient": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.card-gradient"
     }
   }
 }
