@@ -110,5 +110,6 @@ exports
 dist
 build
 .strapi-updater.json
+data/*
 data
 *.enc
