@@ -12,7 +12,7 @@ module.exports = {
   getPageBySlug: async (ctx) => {
     const { slug } = ctx.params;
 
-    console.log("page.js -> #11 -> slug ~", JSON.stringify(slug, null, 2));
+    // console.log("page.js -> #11 -> slug ~", JSON.stringify(slug, null, 2));
 
     const resp = await strapi.entityService.findMany("api::page.page", {
       filters: {
@@ -36,6 +36,7 @@ module.exports = {
                           },
                         },
                         slideImg: MediaFilter,
+                        cardGriadient: { populate: "*" },
                       },
                     },
                     categories: { populate: "*" },
@@ -58,14 +59,30 @@ module.exports = {
                           },
                         },
                         slideImg: MediaFilter,
+                        // cardGriadient: { populate: "*" },
                       },
+                      "components.card-gradient": { populate: "*" },
                     },
                     categories: { populate: "*" },
                   },
                 },
               },
             },
-
+            "landing.landing-repeatable": {
+              populate: {
+                landingCard: {
+                  populate: "*",
+                },
+              },
+            },
+            "about-us.acordeon-repeat": {
+              populate: "*",
+            },
+            "about-us.hero-promotion-form": {
+              populate: {
+                bgImage: MediaFilter,
+              },
+            },
             "components.hero": {
               populate: {
                 bgImage: MediaFilter,

@@ -805,6 +805,7 @@ export interface ApiApiApi extends Schema.CollectionType {
     title: Attribute.String & Attribute.Required;
     slug: Attribute.String;
     slideImg: Attribute.Media;
+    cardGriadient: Attribute.Component<'components.card-gradient', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -889,7 +890,10 @@ export interface ApiPagePage extends Schema.CollectionType {
         'components.hero',
         'apis.card-repeatable',
         'apis.card-collection',
-        'solutions.solution-card-repeatable'
+        'solutions.solution-card-repeatable',
+        'landing.landing-repeatable',
+        'about-us.acordeon-repeat',
+        'about-us.hero-promotion-form'
       ]
     >;
     createdAt: Attribute.DateTime;

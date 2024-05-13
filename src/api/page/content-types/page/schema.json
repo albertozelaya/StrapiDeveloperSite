@@ -26,7 +26,10 @@
         "components.hero",
         "apis.card-repeatable",
         "apis.card-collection",
-        "solutions.solution-card-repeatable"
+        "solutions.solution-card-repeatable",
+        "landing.landing-repeatable",
+        "about-us.acordeon-repeat",
+        "about-us.hero-promotion-form"
       ]
     }
   }

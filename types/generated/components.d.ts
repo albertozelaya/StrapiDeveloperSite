@@ -1,5 +1,30 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
+export interface AboutUsAcordeonRepeat extends Schema.Component {
+  collectionName: 'components_about_us_acordeon_repeats';
+  info: {
+    displayName: 'acordeonRepeat';
+  };
+  attributes: {
+    acordeon: Attribute.Component<'components.acordeon', true>;
+  };
+}
+
+export interface AboutUsHeroPromotionForm extends Schema.Component {
+  collectionName: 'components_about_us_hero_promotion_forms';
+  info: {
+    displayName: 'heroPromotionForm';
+    icon: 'command';
+  };
+  attributes: {
+    title: Attribute.String & Attribute.Required;
+    desc: Attribute.Text & Attribute.Required;
+    bgColor: Attribute.String;
+    bgImage: Attribute.Media;
+    btnColor: Attribute.String & Attribute.Required;
+  };
+}
+
 export interface ApisApiCard extends Schema.Component {
   collectionName: 'components_apis_api_cards';
   info: {
@@ -61,6 +86,30 @@ export interface CategoriesCategory extends Schema.Component {
   };
 }
 
+export interface ComponentsAcordeon extends Schema.Component {
+  collectionName: 'components_components_acordeons';
+  info: {
+    displayName: 'acordeon';
+    icon: 'layer';
+  };
+  attributes: {
+    title: Attribute.String & Attribute.Required;
+    desc: Attribute.RichText & Attribute.Required;
+  };
+}
+
+export interface ComponentsCardGradient extends Schema.Component {
+  collectionName: 'components_components_card_gradients';
+  info: {
+    displayName: 'cardGradient';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String & Attribute.Required;
+    desc: Attribute.String & Attribute.Required;
+  };
+}
+
 export interface ComponentsHero extends Schema.Component {
   collectionName: 'components_components_heroes';
   info: {
@@ -73,6 +122,31 @@ export interface ComponentsHero extends Schema.Component {
     title: Attribute.String & Attribute.Required & Attribute.DefaultTo<'title'>;
     content: Attribute.Text;
     heroImg: Attribute.Media;
+  };
+}
+
+export interface ComponentsLandingCard extends Schema.Component {
+  collectionName: 'components_components_landing_cards';
+  info: {
+    displayName: 'landingCard';
+    icon: 'command';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String & Attribute.Required;
+    desc: Attribute.Text & Attribute.Required;
+    iconComponent: Attribute.String;
+  };
+}
+
+export interface LandingLandingRepeatable extends Schema.Component {
+  collectionName: 'components_landing_landing_repeatables';
+  info: {
+    displayName: 'landingRepeatable';
+    description: '';
+  };
+  attributes: {
+    landingCard: Attribute.Component<'components.landing-card', true>;
   };
 }
 
@@ -112,11 +186,17 @@ export interface SolutionsSolutionCardRepeatable extends Schema.Component {
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
+      'about-us.acordeon-repeat': AboutUsAcordeonRepeat;
+      'about-us.hero-promotion-form': AboutUsHeroPromotionForm;
       'apis.api-card': ApisApiCard;
       'apis.card-collection': ApisCardCollection;
       'apis.card-repeatable': ApisCardRepeatable;
       'categories.category': CategoriesCategory;
+      'components.acordeon': ComponentsAcordeon;
+      'components.card-gradient': ComponentsCardGradient;
       'components.hero': ComponentsHero;
+      'components.landing-card': ComponentsLandingCard;
+      'landing.landing-repeatable': LandingLandingRepeatable;
       'solutions.api-solution': SolutionsApiSolution;
       'solutions.solution-card-repeatable': SolutionsSolutionCardRepeatable;
     }

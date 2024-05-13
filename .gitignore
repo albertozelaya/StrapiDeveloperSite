@@ -110,3 +110,6 @@ exports
 dist
 build
 .strapi-updater.json
+data/
+data/data-backup.tar.gz.enc
+*.enc
